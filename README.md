@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img height="200" width="100" src="/photo_2023-10-03_17-36-00.jpg">
+  <img height="300" width="500" src="/photo_2023-10-03_17-36-00.jpg">
   <h1> سوالات استخدامی مربوط به جاوا اسکریپت</h1>
 </div>
 
