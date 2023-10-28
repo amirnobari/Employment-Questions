@@ -4,11 +4,15 @@
   <h1> سوالات استخدامی مربوط به جاوا اسکریپت</h1>
 </div>
 
+---
+
 <p align="center">⚠️برای ارتباط با تیم js_challenges روی لینک تلگرام بزنید ⚠️</p>
 
 <p align="center">
   <a href="https://t.me/js_challenges">Telegram</a> 
 </p>
+
+---
 
 ###### سوال 1
 
