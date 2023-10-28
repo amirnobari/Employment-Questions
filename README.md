@@ -55,8 +55,10 @@ console.log(x); // null
 console.log(typeof x); // object!
 ```
 به این مقایسه‌ها دقت کنین:
-```null == undefined; // true
-null === undefined // false```
+```javascript
+null == undefined; // true
+null === undefined // false
+```
 مقایسه اول true شد چون مقایسه این دو با == همیشه true هست. مقایسه دوم برای این false شد که توی سه مساوی (===) تبدیل نوع انجام نمی‌گیره. نوع یک ‌null برابر با آبجکت و نوع یک undefined همون undefined هست.
 
 
