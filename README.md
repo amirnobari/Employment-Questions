@@ -1,8 +1,11 @@
 
 <div align="center">
-  <img height="300" width="500" src="/photo_2023-10-03_17-36-00.jpg">
+  <img height="300" width="500" src="/js_challenges.jpg">
   <h1> سوالات استخدامی مربوط به جاوا اسکریپت</h1>
 </div>
+
+> [!note]
+> This repository was created in 2023 and therefore the questions presented here are based on JavaScript syntax and behavior at this time. Since JavaScript is a constantly evolving language, there will be newer language features that will be updated in the future of this repository.
 
 ---
 
