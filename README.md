@@ -117,10 +117,12 @@ true && true && 'Ali' // "Ali"
 <details><summary><b>پاسخ</b></summary>
 <p>
 عملگر || یا ‌OR منطقی اگه بین دو یا چند عبارت با نوع‌های گوناگون قرار بگیره، دنبال اولین عبارتی می‌گرده که truthy هست:
+
 ```javascript
-console.log(null || "Oh you again!" || undefined); // Oh you again!
-console.log(false || false || "Yaaay!"); // Yaaay!
+console.log(null || 'Oh you again!' || undefined) // Oh you again!
+console.log(false || false || 'Yaaay!') // Yaaay!
 ```
+
 </p>
 </details>
 
@@ -133,10 +135,12 @@ console.log(false || false || "Yaaay!"); // Yaaay!
 <details><summary><b>پاسخ</b></summary>
 <p>
 راه‌های زیادی برای تبدیل یک رشته به یک عدد وجود داره. اما سریع‌ترین راه، استفاده از Unary plus (+) هست:
+
 ```javascript
-console.log(+ "29"); // 29 (typeof number);
-console.log(+ "-29"); // -29 (typeof number);
+console.log(+'29') // 29 (typeof number);
+console.log(+'-29') // -29 (typeof number);
 ```
+
 </p>
 </details>
 
@@ -149,14 +153,15 @@ console.log(+ "-29"); // -29 (typeof number);
 <details><summary><b>پاسخ</b></summary>
 <p>
 توابع در جاوااسکریپت با استفاده از کلمه کلیدی function تعریف می‌شوند. برای فراخوانی یک تابع از نام تابع به همراه پرانتز استفاده می‌شود. مثال:
+
 ```javascript
 function myFunction() {
-  console.log("Hello, World!");
+	console.log('Hello, World!')
 }
 
-myFunction(); // فراخوانی تابع
-
+myFunction() // فراخوانی تابع
 ```
+
 </p>
 </details>
 
