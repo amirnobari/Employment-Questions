@@ -298,3 +298,27 @@ console.log(fruit2 === fruit1); // true
 </details>
 
 ---
+
+###### سوال 12
+
+عملگر !! چکار می‌کنه؟
+
+<details><summary><b>پاسخ</b></summary>
+<p>
+
+عملگر Double NOT یا !! وقتی پشت یک مقداری قرار بگیره، اون رو به بولین تبدیل می‌کنه:
+```javascript
+console.log(!! null);      // false
+console.log(!! undefined); // false
+console.log(!! '');        // false
+console.log(!! 0);         // false
+console.log(!! NaN);       // false
+console.log(!! ' ');       // true
+console.log(!! {});        // true
+console.log(!! []);        // true
+console.log(!! 1);         // true
+```
+</p>
+</details>
+
+---
