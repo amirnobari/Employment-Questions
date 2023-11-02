@@ -1,4 +1,3 @@
-
 <div align="center">
   <img height="300" width="500" src="/js_challenges.jpg">
   <h1> سوالات استخدامی مربوط به جاوا اسکریپت</h1>
@@ -241,10 +240,11 @@ Promise و async/await ابزارهایی برای مدیریت عملیات ن�
 ###### سوال 10
 
 چرا کد زیر به خطا منجر میشه؟
-```javascript
-const book = {};
 
-console.log(book.page.number); // TypeError: book.page is undefined
+```javascript
+const book = {}
+
+console.log(book.page.number) // TypeError: book.page is undefined
 ```
 
 <details><summary><b>پاسخ</b></summary>
@@ -255,8 +255,8 @@ console.log(book.page.number); // TypeError: book.page is undefined
 <undefined value>.property;
 
 ```
-مشخصه که یک مقدار undefined نمیتونه شامل یک پراپرتی یا هر چیز دیگه‌ای باشه.
 
+مشخصه که یک مقدار undefined نمیتونه شامل یک پراپرتی یا هر چیز دیگه‌ای باشه.
 
 </p>
 </details>
@@ -265,7 +265,7 @@ console.log(book.page.number); // TypeError: book.page is undefined
 
 ###### سوال 11
 
- وقتی دو آبجکت مشابه رو با هم مقایسه می‌کنیم خروجی چیه؟
+وقتی دو آبجکت مشابه رو با هم مقایسه می‌کنیم خروجی چیه؟
 
 <details><summary><b>پاسخ</b></summary>
 <p>
@@ -275,9 +275,10 @@ console.log(book.page.number); // TypeError: book.page is undefined
 let alex = { hairs: true }
 let john = { hairs: true }
 
-console.log(alex == john); // false
+console.log(alex == john) // false
 ```
-خب اگه کد بالا رو اجرا کنیم خروجی false خواهد بود. 
+
+خب اگه کد بالا رو اجرا کنیم خروجی false خواهد بود.
 
 توی مقایسه‌ی دو آبجکت مشابه جواب همیشه false هست.
 
@@ -286,10 +287,10 @@ console.log(alex == john); // false
 چکار کنیم هنگام مقایسه دو آبجکت جواب true بگیریم؟ باید هر دو آبجکت به یک آدرس از حافظه اشاره کنن که با کد زیر امکان پذیر هست:
 
 ```javascript
-let fruit1 = { name: 'potato' };
-let fruit2 = fruit1;
+let fruit1 = { name: 'potato' }
+let fruit2 = fruit1
 
-console.log(fruit2 === fruit1); // true
+console.log(fruit2 === fruit1) // true
 ```
 
 توی کد بالا و خط دوم وقتی که یک آبجکت رو برابر یک آبجکت دیگه قرار دادیم، در واقع آدرس حافظه متغیر fruit1 به متغیر fruit2 داده شد.
@@ -307,17 +308,44 @@ console.log(fruit2 === fruit1); // true
 <p>
 
 عملگر Double NOT یا !! وقتی پشت یک مقداری قرار بگیره، اون رو به بولین تبدیل می‌کنه:
+
 ```javascript
-console.log(!! null);      // false
-console.log(!! undefined); // false
-console.log(!! '');        // false
-console.log(!! 0);         // false
-console.log(!! NaN);       // false
-console.log(!! ' ');       // true
-console.log(!! {});        // true
-console.log(!! []);        // true
-console.log(!! 1);         // true
+console.log(!!null) // false
+console.log(!!undefined) // false
+console.log(!!'') // false
+console.log(!!0) // false
+console.log(!!NaN) // false
+console.log(!!' ') // true
+console.log(!!{}) // true
+console.log(!![]) // true
+console.log(!!1) // true
 ```
+
+</p>
+</details>
+
+---
+
+###### سوال 13
+
+چه جوری توی یک خط یک عبارت رو محاسبه کنیم؟
+
+<details><summary><b>پاسخ</b></summary>
+<p>
+چند عمل ضرب و تقسیم و ... رو می‌تونیم با کاما جدا کنیم تا توی یک خط ارزیابی بشن و برای اینکه اون رو به یک متغیر نسبت بدیم همه رو توی یک پرانتز قرار میدیم. مثل چیزی که تو خط آخر نوشتیم:
+
+```javascript
+function addFive(num) {
+	return num + 5
+}
+
+let x = 5
+
+x = (x++, (x = addFive(x)), (x *= 2), (x -= 5), (x += 10))
+```
+
+توی خط آخر عبارت‌ها از سمت چپ به راست محاسبه میشن و نهایتا خروجی که عدد ۲۷ هست به متغیر x نسبت داده میشه.
+
 </p>
 </details>
 
