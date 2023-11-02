@@ -639,22 +639,21 @@ console.log(jumps.count) // 3
 <p>
 ۱۴ مورد زیر توسط ES6 به جاوا اسکریپت اضافه شده
 
-***
-1 - Arrow Functions
-2 - Classes
-3 - Template Strings یا Template Literals
-4 - Enhanced Object literals
-5 - Object Destructuring
-6 - Promises
-7 - Generators
-8 - Modules
-9 - Symbol
-10 - Proxies
-11 - Sets
-12 - پارامترهای پیشفرض توابع
-13 - عملگرهای Rest and Spread
-14 - Let و Const
- ***
+1. Arrow Functions
+2. Classes
+3. Template Strings یا Template Literals
+4. Enhanced Object literals
+5. Object Destructuring
+6. Promises
+7. Generators
+8. Modules
+9. Symbol
+10. Proxies
+11. Sets
+12. پارامترهای پیشفرض توابع
+13. عملگرهای Rest and Spread
+14. Let و Const
+
  </p>
 </details>
 
