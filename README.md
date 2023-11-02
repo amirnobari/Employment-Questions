@@ -353,7 +353,7 @@ x = (x++, (x = addFive(x)), (x *= 2), (x -= 5), (x += 10))
 
 ###### سوال 14
 
-Hoisting چیه؟
+مفهوم Hoisting چیه؟
 
 <details><summary><b>پاسخ</b></summary>
 <p>
