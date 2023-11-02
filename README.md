@@ -408,7 +408,7 @@ let puppy = 30
 
 ###### سوال 15
 
-مفهوم use strict?
+مفهوم use strict؟
 
 <details><summary><b>پاسخ</b></summary>
 <p>
