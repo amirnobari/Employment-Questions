@@ -527,3 +527,36 @@ person.name.apply(person1, [3, 'Japan'])
 </details>
 
 ---
+###### سوال 17
+
+ متد call چکار می‌کنه؟
+
+<details><summary><b>پاسخ</b></summary>
+<p>
+با استفاده از متد call می‌تونیم از یک تابع جوری استفاده کنیم که مقدار this توی اون، به آبجکت دلخواه ما اشاره کنه:
+
+```javascript
+function add(first, second, third) {
+    this.result = first + second + third
+}
+
+const item1 = { result: 0 }
+const item2 = { result: 0 }
+const item3 = { result: 0 }
+
+add.call(item1, 3, 2, 1)
+add.call(item2, 9, 3, 2)
+add.call(item3, 6, 1, 3)
+
+console.log((item1.result)) // 6
+console.log((item2.result)) // 14
+console.log((item3.result)) // 10
+
+```
+گه تابع ما نیاز به آرگومان داشته باشه، اون رو بصورت جدا جدا پاس می‌دیم.
+
+همونطور که دیدیم call و apply شبیه به هم هستن. اما یک تفاوت جزئی دارن که توی سوال بعدی با اون آشنا میشیم.
+</p>
+</details>
+
+---
