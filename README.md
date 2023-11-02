@@ -416,27 +416,113 @@ let puppy = 30
 کلمه strict به معنی سخت‌گیرانه هست. وقتی توی جاوا اسکریپت از این دستور استفاده می‌کنیم برنامه‌ی وارد حالت سخت‌گیرانه میشه. به قول معروف Strict Mode. استفاده از این دستور باعث میشه تا کدهایی امن‌تر و با باگ‌های کمتری بنویسیم. یکی از سخت‌گیری‌هایی که اعمال میشه موقع استفاده از متغیرهایی هست که تعریف نشدن:
 
 ```javascript
-"use strict";
-x = 3.14; // ReferenceError: assignment to undeclared variable x
+'use strict'
+x = 3.14 // ReferenceError: assignment to undeclared variable x
 ```
+
 خب کد بالا با استفاده از use strict باعث بروز خطا میشه و میگه به متغیر x داریم مقدار می‌دیم درحالی که تعریف نشده. اما این کد بدون استفاده از use strict بدون مشکل اجرا میشه. خب برای اصلاح این کد باید اون رو به شکل زیر بنویسیم:
 
 ```javascript
-"use strict";
-var x = 3.14;
+'use strict'
+var x = 3.14
 ```
+
 عبارت use strict رو همیشه اول اسکریپت یا اول توابع می‌نویسیم:
 
 ```javascript
-x = 3.14;       // No error
-myFunction();
+x = 3.14 // No error
+myFunction()
 
 function myFunction() {
-    "use strict";
-    y = 3.14;   // ReferenceError: assignment to undeclared variable y
+	'use strict'
+	y = 3.14 // ReferenceError: assignment to undeclared variable y
+}
+```
+
+</p>
+</details>
+
+---
+
+###### سوال 16
+
+مقدارهای falsy چی هستن؟
+
+<details><summary><b>پاسخ</b></summary>
+<p>
+به مقادیری گفته میشه که وقتی اونها رو به Boolean تبدیل می‌کنیم، به false تبدیل میشن. مقادیر زیر falsy هستن:
+
+```javascript
+const falsyValues = ['', 0, null, undefined, NaN, false]
+```
+
+</p>
+</details>
+
+---
+
+###### سوال 16
+
+متد apply چکار می‌کنه؟
+
+<details><summary><b>پاسخ</b></summary>
+<p>
+با متد apply می‌تونیم یه کاری کنیم که this توی یک تابع به آبجکت دلخواه ما اشاره کنه.
+
+همونطور که می‌دونیم آبجکت‌ها می‌تونن متد داشته باشن. مثل متد name توی آبجکت زیر:
+
+```javascript
+const person = {
+	firstname: 'John',
+	lastname: 'Doe',
+
+	name() {
+		console.log(`${this.firstname} ${this.lastname}`)
+	},
 }
 
+person.name() // John Doe
 ```
+
+خب در حالت عادی متد name متعلق به آبجکت person هست و this به این آبجکت اشاره می‌کنه. با استفاده از متد apply می‌تونیم یه کاری کنیم که this توی متد name به یک آبجکت دلخواه دیگه اشاره کنه. یعنی متد name رو بتونیم جاهای دیگه استفاده کنیم:
+
+```javascript
+const person = {
+	firstname: 'John',
+	lastname: 'Doe',
+
+	name() {
+		console.log(`${this.firstname} ${this.lastname}`)
+	},
+}
+
+const person1 = {
+	firstname: 'Jeff',
+	lastname: 'Olson',
+}
+
+const person2 = {
+	firstname: 'Maria',
+	lastname: 'Debug',
+}
+
+person.name.apply(person1)
+person.name.apply(person2)
+```
+
+و حالا بصورت زیر می‌تونیم ازش استفاده کنیم:
+
+```javascript
+const person1 = {
+	firstname: 'John',
+	lastname: 'Doe',
+}
+
+person.name.apply(person1, [3, 'Japan'])
+```
+
+‌آرگومان دوم متد apply یک آرایه هست. هر کدوم از آیتم‌های این آرایه به عنوان آرگومان‌های متد name در نظر گرفته میشه.
+
 </p>
 </details>
 
