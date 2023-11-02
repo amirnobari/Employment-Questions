@@ -630,3 +630,33 @@ console.log(jumps.count) // 3
 </details>
 
 ---
+
+###### سوال 20
+
+چه چیزایی به جاوا اسکریپت توسط ES6 اضافه شده؟.
+
+<details><summary><b>پاسخ</b></summary>
+<p>
+۱۴ مورد زیر توسط ES6 به جاوا اسکریپت اضافه شده
+
+[!note]
+Arrow Functions
+Classes
+Template Strings یا Template Literals
+Enhanced Object literals
+Object Destructuring
+Promises
+Generators
+Modules
+Symbol
+Proxies
+Sets
+پارامترهای پیشفرض توابع
+عملگرهای Rest and Spread
+Let و Const
+ 
+ ---
+ </p>
+</details>
+
+---
