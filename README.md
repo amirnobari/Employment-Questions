@@ -405,3 +405,39 @@ let puppy = 30
 </details>
 
 ---
+
+###### سوال 15
+
+مفهوم use strict?
+
+<details><summary><b>پاسخ</b></summary>
+<p>
+
+کلمه strict به معنی سخت‌گیرانه هست. وقتی توی جاوا اسکریپت از این دستور استفاده می‌کنیم برنامه‌ی وارد حالت سخت‌گیرانه میشه. به قول معروف Strict Mode. استفاده از این دستور باعث میشه تا کدهایی امن‌تر و با باگ‌های کمتری بنویسیم. یکی از سخت‌گیری‌هایی که اعمال میشه موقع استفاده از متغیرهایی هست که تعریف نشدن:
+
+```javascript
+"use strict";
+x = 3.14; // ReferenceError: assignment to undeclared variable x
+```
+خب کد بالا با استفاده از use strict باعث بروز خطا میشه و میگه به متغیر x داریم مقدار می‌دیم درحالی که تعریف نشده. اما این کد بدون استفاده از use strict بدون مشکل اجرا میشه. خب برای اصلاح این کد باید اون رو به شکل زیر بنویسیم:
+
+```javascript
+"use strict";
+var x = 3.14;
+```
+عبارت use strict رو همیشه اول اسکریپت یا اول توابع می‌نویسیم:
+
+```javascript
+x = 3.14;       // No error
+myFunction();
+
+function myFunction() {
+    "use strict";
+    y = 3.14;   // ReferenceError: assignment to undeclared variable y
+}
+
+```
+</p>
+</details>
+
+---
