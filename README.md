@@ -743,3 +743,26 @@ console.log(output); // 10
 </details>
 
 ---
+
+###### سوال 24
+
+چه جوری یک آبجکت بدون prototype بسازیم؟
+
+<details><summary><b>پاسخ</b></summary>
+<p>
+
+اگه از متد Object.create با ورودی null استفاده کنیم، آبجکت‌هایی که ساخته میشن پروتوتایپ ندارن:
+
+```javascript
+const obj = Object.create(null);
+
+
+alert(obj.toString()); // obj.toString is not a function
+```
+
+ورودی‌ای که متد create می‌گیره یک آبجکت هست و به عنوان پروتوتایپ آبجکت جدید درنظر گرفته میشه. اگه این ورودی null باشه، خروجی یک آبجکت بدون Prototype هست.
+
+</p>
+</details>
+
+---
