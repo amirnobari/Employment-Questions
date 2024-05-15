@@ -8,7 +8,7 @@
 
 ---
 
-<p align="center">⚠️برای ارتباط با تیم js_challenges روی لینک تلگرام بزنید ⚠️</p>
+<p align="center">⚠️برای ارتباط با تیم DeepDevs روی لینک تلگرام بزنید ⚠️</p>
 
 <p align="center">
   <a href="https://t.me/DeepDevs">Telegram</a> 
