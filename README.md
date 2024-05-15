@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="300" width="500" src="/js_challenges.jpg">
+  <img height="300" width="500" src="/DeepDevs.jpg">
   <h1> سوالات استخدامی مربوط به جاوا اسکریپت</h1>
 </div>
 
